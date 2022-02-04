@@ -46,8 +46,12 @@ html{
     height: 845px;
     justify-content: center;
     align-items: center;
+    left: 10%;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
+}
+.link{
+    color: antiquewhite;
 }
 #home::before{
     content: "";
@@ -61,7 +65,7 @@ html{
     opacity: .8;
 }
 .heading{
-    color: white;
+    color: antiquewhite;
     font-size: 3rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
@@ -69,10 +73,17 @@ html{
 }
 
 /* Projects Section */
+.projectTitle{
+    color: #4a4a4a;
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    transform: scale(1,1.3);
+}
 #articles{
     display: flex;
     flex-direction: column;
-    background-color: #000000dc;
+    background-color: #f7efefdc;
 }
 #articles h1{
     margin: 60px;
@@ -85,24 +96,25 @@ html{
 .box{
     height: 200px;
     width: 500px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(8, 0, 0);
     border-radius: 20px;
     margin: 10px;
     padding: 20px;
 }
 .box h2{
-    color: rgb(0, 0, 0);
+    color: rgb(190, 27, 27);
     font-size: 2rem;
     margin-bottom: 40px;
 }
 .box p{
-    color: black;
+    color: rgb(245, 230, 230);
     font-size: 1.1rem;
 }
 
 /* About Section */
 #about{
     display: flex;
+    background-color: #4a4a4a;
     flex-direction: column;
     text-align: justify;
     height: 100%;
@@ -185,6 +197,7 @@ html{
 }
 .social-footer {
     padding: 1rem;
+    font-weight: bold;
     background: #8a8a8a;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -199,16 +212,23 @@ html{
   
   .social-footer .social-footer-icons li:last-of-type {
     margin-right: 0;
+    
   }
   
   .social-footer .social-footer-icons .fa {
     font-size: 2.3rem;
     color: #fefefe;
+    
   }
   
   .social-footer .social-footer-icons .fa:hover {
     color: #4a4a4a;
     transition: color 0.3s ease-in;
+  }
+
+  .social-footer .social-footer-icons li{
+  list-style: none;
+    
   }
   
   
