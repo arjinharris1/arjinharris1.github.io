@@ -83,33 +83,57 @@ html{
 #articles{
     display: flex;
     flex-direction: column;
+    padding: 20px;
     background-color: #f7efefdc;
 }
 #articles h1{
-    margin: 60px;
+   display: flex;
+   flex-direction: column;
+   padding: 20px;
 }
 .columns{
-    display: grid;
-    grid-template-columns: auto auto;
-    padding-left: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
 }
 .box{
-    height: 200px;
-    width: 500px;
-    background-color: rgb(8, 0, 0);
-    border-radius: 20px;
-    margin: 10px;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 350;
+  height: 450px;
+  border: 1px solid black;
+  margin: 10px;
+  align-items: center;
+  text-align: justify;
+  padding: 10px;
+  border-radius: 15px;
+  background:linear-gradient(to top, red 50%, white 50%);
+  background-size: 100% 200%;
+  transition: all .8s;
+
+}
+.box:hover{
+    background-position: left bottom;
+    color: white;
+    border: none;
+    box-shadow: 0 0 20px red;
+
 }
 .box h2{
     color: rgb(190, 27, 27);
     font-size: 2rem;
-    margin-bottom: 40px;
 }
-.box p{
-    color: rgb(245, 230, 230);
-    font-size: 1.1rem;
+.box h2:hover{
+    color: white;
 }
+.box img{
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    padding: 10px;
+}
+
 
 /* About Section */
 #about{
