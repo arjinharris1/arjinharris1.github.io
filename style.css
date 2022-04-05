@@ -5,6 +5,9 @@
 html{
     scroll-behavior: smooth;
 }
+.textBlock{
+width: 250px;
+}
 
 /* navbar */
 .navbar{
